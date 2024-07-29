@@ -59,6 +59,7 @@ body {
 .navigation {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
@@ -72,6 +73,13 @@ body {
     font-size: 1em;
     transition: background-color 0.3s ease;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button i {
+    margin-right: 5px;
 }
 
 .nav-button:hover {
@@ -87,15 +95,16 @@ body {
     color: #ccc;
 }
 
-.footer img {
-    max-width: 150px;
+.watermark {
+    font-size: 1.2em;
     margin-bottom: 10px;
+    color: #ffcc00;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social-icons a {
@@ -123,8 +132,8 @@ body {
         font-size: 0.9em;
     }
 
-    .footer img {
-        max-width: 130px;
+    .watermark {
+        font-size: 1em;
     }
 }
 
@@ -141,8 +150,8 @@ body {
         font-size: 0.8em;
     }
 
-    .footer img {
-        max-width: 120px;
+    .watermark {
+        font-size: 0.9em;
     }
 }
 
@@ -159,8 +168,8 @@ body {
         font-size: 0.75em;
     }
 
-    .footer img {
-        max-width: 100px;
+    .watermark {
+        font-size: 0.8em;
     }
 }
 
@@ -177,7 +186,7 @@ body {
         font-size: 0.7em;
     }
 
-    .footer img {
-        max-width: 80px;
+    .watermark {
+        font-size: 0.7em;
     }
 }
