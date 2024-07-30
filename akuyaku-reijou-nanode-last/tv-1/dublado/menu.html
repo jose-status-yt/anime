@@ -1,108 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <link rel="icon" href="../jose.ico" type="jose.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akuyaku Reijou nanode Last Boss wo Kattemimashita - Dublado</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: black;
+            background-color: #000; /* Fundo preto */
+            color: #ccc; /* Cor do texto em cinza claro */
+            text-align: center;
             margin: 0;
             padding: 0;
         }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
+        .header {
+            background-color: #333;
             color: #fff;
-            background-color: rgba(76, 175, 80, 0.8);
-            /* Fundo semi-transparente */
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px rgba(0, 0, 0, 0.2);
-            margin: 10px 0;
-            width: 100%;
-            max-width: 300px;
+            padding: 15px 10px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .button:hover {
-            background-color: rgba(62, 142, 65, 0.8);
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
         }
-
-        .button:active {
-            background-color: rgba(62, 142, 65, 0.8);
-            box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-            transform: translateY(2px);
-        }
-
-        .container {
-            text-align: center;
+        .episodes {
+            background-color: #111; /* Fundo quase preto */
+            padding: 20px;
             margin: 20px auto;
+            width: 90%;
             max-width: 1200px;
-            padding: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
-
-        /* Estilo para telas maiores, como desktops e laptops */
-        @media (min-width: 992px) {
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .button {
-                margin: 15px;
-                padding: 15px 30px;
-                font-size: 18px;
-            }
+        .episode {
+            background-color: #222; /* Fundo cinza escuro */
+            margin: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 200px;
+            display: inline-block;
         }
-
-        /* Estilo para tablets */
-        @media (min-width: 768px) and (max-width: 991px) {
-            .button {
-                margin: 15px;
-                padding: 12px 25px;
-                font-size: 16px;
-            }
+        .episode img {
+            max-width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
-
-        /* Estilo para celulares */
-        @media (max-width: 767px) {
-            .button {
-                margin: 10px auto;
-                padding: 10px 20px;
-                font-size: 14px;
-                width: 90%;
-            }
+        .episode-title {
+            padding: 10px;
+            font-size: 18px;
+            color: #fff; /* Cor do título em branco */
+        }
+        .episode a {
+            display: block;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
         }
     </style>
 </head>
-
 <body>
-
-    <div class="container">
-        <a class="button" href="episodio-1.html" target="_blank">Assistir Episódio 1</a>
-        <a class="button" href="episodio-2.html" target="_blank">Assistir Episódio 2</a>
-        <a class="button" href="episodio-3.html" target="_blank">Assistir Episódio 3</a>
-        <a class="button" href="episodio-4.html" target="_blank">Assistir Episódio 4</a>
-        <a class="button" href="episodio-5.html" target="_blank">Assistir Episódio 5</a>
-        <a class="button" href="episodio-6.html" target="_blank">Assistir Episódio 6</a>
-        <a class="button" href="episodio-7.html" target="_blank">Assistir Episódio 7</a>
-        <a class="button" href="episodio-8.html" target="_blank">Assistir Episódio 8</a>
-        <a class="button" href="episodio-9.html" target="_blank">Assistir Episódio 9</a>
-        <a class="button" href="episodio-10.html" target="_blank">Assistir Episódio 10</a>
-        <a class="button" href="episodio-11.html" target="_blank">Assistir Episódio 11</a>
-        <a class="button" href="episodio-12.html" target="_blank">Assistir Episódio 12 Final</a>
+    <div class="header">
+        <a href="index.html">← Voltar</a>
+        <span>Akuyaku Reijou nanode Last Boss wo Kattemimashita - Dublado</span>
     </div>
-
+    
+    <div class="episodes">
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYmOgg6dDjz1syuo3BGUWMYj9voS4HqQVfCUtz-wla4m4xnf1EOF_qW1Ef2FlIwxJtgI9vX2AQfUO_SEaHnTp48A8ta80sn0g=w1920-h1080-k-rw-v1-pd" alt="Episódio 1">
+            <div class="episode-title">Episódio 1</div>
+            <a href="episodio-1.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZmHfscHVJAvuCHv5k3pjsfFiB5QLJLr_6FLr6_hAhEi0_bHkVzeahjo3uhUojL-Bnzifp2u4tChq0zuC2br4J_ALLkpcl-w20=w1920-h1080-k-rw-v1-pd" alt="Episódio 2">
+            <div class="episode-title">Episódio 2</div>
+            <a href="episodio-2.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihY0jgbRRZBUr7Mim0SzGbGXVzpApdP6LvX7kwV3qHRl7we8NlSupsPjX5gw0VWXbAU0oyMVNIeq2L7krsXZwlQNf4onwXuYJw=w1920-h1080-k-rw-v1-pd" alt="Episódio 3">
+            <div class="episode-title">Episódio 3</div>
+            <a href="episodio-3.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYUZQcF0wxl3HX2MojhpESi4JJp0OKxDhomFd61eTHeBy9HZcUWmclY_Fd8exSQoJOz7GK8scxbE4VP55uVLT_U0IQ1IiWRj7M=w1920-h1080-k-rw-v1-pd" alt="Episódio 4">
+            <div class="episode-title">Episódio 4</div>
+            <a href="episodio-4.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihb00gdOITK2Nd4ocS_LEq2Yaj2AbIxsIu_OPV3m9CVjmBa3YrpNnUcZwPBx4Dsoaf1u4XMF2hSd6LzpW-N3O5Onnm0wrzF9BR8=w1920-h1080-k-rw-v1-pd" alt="Episódio 5">
+            <div class="episode-title">Episódio 5</div>
+            <a href="episodio-5.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ9Lo4p4MVMmQWDUQ2UMpUhSm3Ae1IjtGsLfeZrV4dEXWlrmxwGmf2GsgD_lXjyMLWvWwFCCAZdPuiSKOkCEJ0WtWxIc0GlxFY=w1920-h1080-k-rw-v1-pd" alt="Episódio 6">
+            <div class="episode-title">Episódio 6</div>
+            <a href="episodio-6.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYDlmcIyRnVyLkyw20qcipkgzV7llY9Q5pOOUssLbZ0iTxECscB3A90SUMoOV5y_zNkr03NS9lzhKIcht-gg_2KZZCIqpWhhp4=w1920-h1080-k-rw-v1-pd" alt="Episódio 7">
+            <div class="episode-title">Episódio 7</div>
+            <a href="episodio-7.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbv1PpACv-MrezqMAA_9Lx6bxbSJDZfCGQnx1uFqWLZy9dZRhIIxPXUwfeYdAM-IF9QcJ437-cZG7VCiV3tnNgssxDrgzwkTg=w1920-h1080-k-rw-v1-pd" alt="Episódio 8">
+            <div class="episode-title">Episódio 8</div>
+            <a href="episodio-8.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihag0xkzts5gyqoZQkdsUHGUR76YG0dZ7zZjvfKC_M2y5o-p_Q-8b_vc_TUuhLvHyFD58UyhCYDTtE_8l6C964_wB5BFD5PTCw=w1920-h1080-k-rw-v1-pd" alt="Episódio 9">
+            <div class="episode-title">Episódio 9</div>
+            <a href="episodio-9.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYoedqJTpibE0YWN44tiHlynS0PDv2Hi0d6soj3OqaC_XiipJCkk1-GUOpZyjBJXBPpcCZzYry03cjkPCNsLY_itkswdCEOz1g=w1920-h1080-k-rw-v1-pd" alt="Episódio 10">
+            <div class="episode-title">Episódio 10</div>
+            <a href="episodio-10.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYDaT_NeMKB8M1vPGdDt3ofdRCVPY1mv26BKhrHhcx9IXnsq0-2JBvEKRnUSIrVexwgCE1gWXomqnCgk49rSAz5Y3J8hHReTAs=w1920-h1080-k-rw-v1-pd" alt="Episódio 11">
+            <div class="episode-title">Episódio 11</div>
+            <a href="episodio-11.html">Assistir</a>
+        </div>
+        <div class="episode">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZz_AqquxGI1VvtiEa8vtNy3V2VWl5_ruEhl25-9BZsWOwIksNpaegqnjZjOuPdYKj7kq8-22k4sSFFTWHjN7unH3A_nABjaEM=w1920-h1080-k-rw-v1-pd" alt="Episódio 12">
+            <div class="episode-title">Episódio 12 Final</div>
+            <a href="episodio-12.html">Assistir</a>
+        </div>
+        <!-- Adicione mais episódios aqui -->
+    </div>
+    
+    <div class="footer">
+        <p>Obrigado por assistir! Siga-nos nas redes sociais:</p>
+        <div class="social-links">
+            <a href="https://instagram.com/seu_perfil"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/seu_perfil"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://wa.me/seu_numero"><img src="whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://discord.gg/seu_convite"><img src="discord.png" alt="Discord"></a>
+            <a href="https://t.me/seu_canal"><img src="telegram.png" alt="Telegram"></a>
+        </div>
+    </div>
 </body>
-
 </html>
