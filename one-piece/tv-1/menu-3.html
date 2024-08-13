@@ -70,27 +70,47 @@
             background-color: #333;
             color: #fff;
         }
-        .navigation {
-            margin-bottom: 20px;
-        }
-        .navigation a {
-            color: #007bff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            margin: 0 5px;
-        }
-        .navigation a:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
         .social-links a {
             margin: 0 10px;
         }
         .social-links img {
             width: 30px;
             height: 30px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .pagination li {
+            margin: 5px;
+        }
+        .pagination li a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .pagination li a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .pagination li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Responsive styles for mobile devices */
+        @media (max-width: 600px) {
+            .pagination li a {
+                padding: 8px 12px; /* Adjusted padding for mobile */
+                font-size: 14px; /* Adjusted font size for mobile */
+            }
         }
     </style>
 </head>
@@ -354,10 +374,15 @@
     </div>
     
     <div class="footer">
-        <div class="navigation">
-            <a href="menu-2.html">Página Anterior</a>
-            <a href="menu-4.html">Próxima Página</a>
-        </div>
+        <ul class="pagination">
+            <li><a href="menu-2.html">«</a></li>
+            <li><a href="menu.html">1</a></li>
+            <li><a href="menu-2.html">2</a></li>
+            <li><a href="menu-3.html" class="active">3</a></li>
+            <li><a href="menu-4.html">4</a></li>
+            <li><a href="menu-5.html">5</a></li>
+            <li><a href="menu-4.html">»</a></li>
+        </ul>
         <p>Não hospedamos nenhum dos vídeos nos nossos servidores, apenas o indexamos.</p>
         <div class="social-links">
             <a href="https://www.instagram.com/jose_status_yt/"><img src="https://jose-status-yt.github.io/jose-status-yt/rede-social/Instagram.png" alt="Instagram"></a>

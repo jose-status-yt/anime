@@ -70,27 +70,47 @@
             background-color: #333;
             color: #fff;
         }
-        .navigation {
-            margin-bottom: 20px;
-        }
-        .navigation a {
-            color: #007bff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            margin: 0 5px;
-        }
-        .navigation a:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
         .social-links a {
             margin: 0 10px;
         }
         .social-links img {
             width: 30px;
             height: 30px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .pagination li {
+            margin: 5px;
+        }
+        .pagination li a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .pagination li a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .pagination li a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Responsive styles for mobile devices */
+        @media (max-width: 600px) {
+            .pagination li a {
+                padding: 8px 12px; /* Adjusted padding for mobile */
+                font-size: 14px; /* Adjusted font size for mobile */
+            }
         }
     </style>
 </head>
@@ -221,13 +241,17 @@
             <div class="episode-title">Episódio 574</div>
             <a href="dublado/temporada-21/episodio-574.html">Assistir</a>
         </div>
-        <!-- Adicione mais episódios aqui -->
     </div>
     
     <div class="footer">
-        <div class="navigation">
-            <a href="menu-11.html">Página Anterior</a>
-        </div>
+        <ul class="pagination">
+            <li><a href="menu-11.html">«</a></li>
+            <li><a href="menu-8.html">8</a></li>
+            <li><a href="menu-9.html">9</a></li>
+            <li><a href="menu-10.html">10</a></li>
+            <li><a href="menu-11.html">11</a></li>
+            <li><a href="menu-12.html" class="active">12</a></li>
+        </ul>
         <p>Não hospedamos nenhum dos vídeos nos nossos servidores, apenas o indexamos.</p>
         <div class="social-links">
             <a href="https://www.instagram.com/jose_status_yt/"><img src="https://jose-status-yt.github.io/jose-status-yt/rede-social/Instagram.png" alt="Instagram"></a>
