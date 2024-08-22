@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <link rel="icon" href="jose.ico" type="jose.ico">
-    <title>JOSE STATUS YT</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamentos de Animes</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .anime-item { margin-bottom: 20px; }
+        .anime-title { font-size: 18px; font-weight: bold; }
+        .anime-description { margin: 5px 0; }
+        .anime-link { text-decoration: none; color: blue; }
+    </style>
 </head>
-
 <body>
-    <p>
-        O conteúdo desta página foi movido para o link:
-        <a href="JOSÉ STATUS YT">https://sites.google.com/view/jose-status-anime</a>
-    </p>
-</body>
+    <h1>Lançamentos de Animes</h1>
+    <div id="anime-list"></div>
 
+    <script>
+        // URL do seu feed RSS
+        const rssUrl = 'https://jose-status-yt.github.io/anime/rss.xml';
+
+        // Função para carregar e exibir o feed RSS
+        function loadRSS() {
+            fetch(rssUrl)
+                .then(response => response.text())
+                .then(data => {
+                    const parser = new DOMParser();
+                    const xml = parser.parseFromString(data, "application/xml");
+                    const items = xml.querySelectorAll("item");
+                    let htmlContent = '';
+
+                    items.forEach(item => {
+                        const title = item.querySelector("title").textContent;
+                        const link = item.querySelector("link").textContent;
+                        const description = item.querySelector("description").textContent;
+
+                        htmlContent += `
+                            <div class="anime-item">
+                                <a href="${link}" class="anime-link">
+                                    <div class="anime-title">${title}</div>
+                                </a>
+                                <div class="anime-description">${description}</div>
+                            </div>
+                        `;
+                    });
+
+                    document.getElementById('anime-list').innerHTML = htmlContent;
+                })
+                .catch(error => console.log('Erro ao carregar o feed RSS:', error));
+        }
+
+        // Carregar o RSS quando a página for carregada
+        window.onload = loadRSS;
+    </script>
+</body>
 </html>
