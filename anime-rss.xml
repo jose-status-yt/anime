@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>JOSÉ STATUS ANIME RSS</title>
+    <link>https://jose-status-yt.github.io/anime-rss.xml</link>
+    <description>Atualizações sobre novos episódios de animes</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
+    <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+    <ttl>1800</ttl>
+
+    <!-- Exemplo de um item do feed para um episódio de anime -->
+    <item>
+      <title>[Nome do Anime] - Episódio [Número]</title>
+      <link>https://link-para-o-episodio.com</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+      <guid>https://jose-status-yt.github.io/anime/episodio-01</guid>
+    </item>
+    
+    <!-- Adicione mais itens aqui para outros episódios ou animes -->
+  </channel>
+</rss>
